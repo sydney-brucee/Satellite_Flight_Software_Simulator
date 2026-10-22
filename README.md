@@ -10,18 +10,21 @@ Modular C++ simulation of satellite attitude dynamics controlled by a PD control
 - Automated parameter tuning
 
 ## How to Build and Run
-From the main folder:
+**From the main folder:**
 
 .\build.ps1
 
-Or manually:
+**Or manually:**
 
 g++ -std=c++17 -Iinclude src/*.cpp -o attitude_sim.exe
+
 .\attitude_sim.exe              # default gains
+
 .\attitude_sim.exe 54 41        # custom gains
 
 ## Plotting and Tuning
 python python/plot_results.py   # generate attitude_response.png
+
 python python/tune_gains.py     # grid-search for kp and kd
 
 ## Current Behavior
@@ -46,6 +49,7 @@ Higher gains produce faster response but increase sensitivity to sensor noise, a
 
 ## Unit Test
 g++ -std=c++17 -Iinclude tests/test_controller.cpp src/controller.cpp -o test_controller.exe
+
 .\test_controller.exe
 
 Expected output: Controller unit test passed
