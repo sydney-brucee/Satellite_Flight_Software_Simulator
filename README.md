@@ -36,6 +36,8 @@ Automated grid search and manual evaluation identified a high-performance set of
 
 Higher gains produce faster response but increase sensitivity to sensor noise, appearing as small high-frequency jitter in the rates after settling. This is a classic control tradeoff. The plot attitude_response.png shows the closed-loop behavior. The system remains stable and reaches the target even with measurement noise.
 
+![Attitude and rate response](python/attitude_response.png)
+
 ## Structure
 - src/ — C++ simulation and controller
 - include/ — Headers

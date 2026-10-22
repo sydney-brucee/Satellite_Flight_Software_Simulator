@@ -1,0 +1,43 @@
+# Build artifacts
+build/
+bin/
+obj/
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+
+# Compiled Python / bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Telemetry / generated data
+#*.csv
+*.log
+
+# Plots 
+#attitude_response.png
